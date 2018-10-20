@@ -72,11 +72,11 @@ appData.moneyPerDay = appData.budget / 30;
 
 alert("Ежедневный бюджет: " + appData.moneyPerDay);
 
-if (appData.moneyPerDay < 100) {
+if (appData.moneyPerDay <= 100) {
     console.log("минимальный уровень достатка");
-} else if (appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
+} else if (appData.moneyPerDay >= 100 && appData.moneyPerDay <= 2000) {
     console.log("средный уровень достатка");
-} else if (appData.moneyPerDay > 2000) {
+} else if (appData.moneyPerDay >= 2000) {
     console.log("высокий уровень достатка");
 } else {
     console.log("произошла ошибка");
