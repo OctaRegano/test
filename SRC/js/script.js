@@ -1,3 +1,5 @@
+
+
 let buttonStart = document.getElementById('start'), //Начать расчет
     budgetValue = document.getElementsByClassName('budget-value')[0], //Доход
     dayBudgetValue = document.getElementsByClassName('daybudget-value')[0], //Бюджет на 1 день
@@ -20,7 +22,7 @@ let buttonStart = document.getElementById('start'), //Начать расчет
     month = document.querySelectorAll('.month-value')[0], //Месяц
     day = document.querySelectorAll('.day-value')[0]; //День
 
-'use strict'
+
 
 expensesButton.disabled = true;
 optionalExpensesButton.disabled = true;
