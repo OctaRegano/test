@@ -86,10 +86,30 @@ window.addEventListener('DOMContentLoaded', function() {
                 document.querySelector('.seconds').textContent = '00';
             }
         }
-    }
-
-    
+    }  
     
     setClock('timer', deadLine);
 
+
+    // Modal
+
+    let overlay = document.querySelector('.overlay');
+        
+
+    
+    document.body.addEventListener('click', function(e) {
+       let target = e.target;
+
+       if (target.classList.contains('description-btn') ||  target.classList.contains('more')) {
+           overlay.style.display = 'block';
+           document.body.style.overflow = 'hidden';
+       }
+       if (target.classList.contains('popup-close')) {
+           overlay.style.display = 'none';
+           document.body.style.overflow = '';
+       }
+
+    });
+      
+    
 });
